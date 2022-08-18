@@ -1,0 +1,9 @@
+#chat_component {
+  background-color: #100018;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  padding: 1% 2%;
+}
+/*# sourceMappingURL=chat.css.map */

@@ -1,0 +1,159 @@
+#register_component {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100018;
+
+  --padding: 8px;
+}
+
+#register_component form {
+  /* background-color: red; */
+  border: 2px solid hsl(280 100% 95% / 0.427);
+  border-radius: 5px;
+  width: 380px;
+  padding: 17px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 15px; */
+}
+#register_component .logo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+#register_component .logo img {
+  height: 50px;
+  width: 50px;
+}
+#register_component .logo h2 {
+  color: hsl(280 80% 55%);
+  font: 700 2rem var(--arimaFont);
+  text-transform: uppercase;
+}
+#register_component .heading h3 {
+  color: whitesmoke;
+  font: 600 1.7em var(--arimaFont);
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+#register_component .input_div {
+  width: 95%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.input_div input {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid hsl(280 100% 95% / 0.293);
+  background: none;
+  font: 1em var(--poppinsFont);
+  padding: 15px var(--padding) 0;
+  color: hsl(0, 0%, 96%);
+}
+.input_div label {
+  position: absolute;
+  left: 0;
+  padding-left: var(--padding);
+  color: #ffffff8a;
+  top: 15px;
+  font: 1em system-ui;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+.input_div input:not(:placeholder-shown),
+.input_div input:focus {
+  border-color: hsl(0 0% 96% / 0.74);
+}
+.input_div input:not(:placeholder-shown) + label,
+.input_div input:focus + label {
+  top: 4px;
+  font-size: 0.7em;
+  letter-spacing: 1.2px;
+}
+
+.errorDiv {
+  background-color: hsl(354 61% 45%);
+  color: white;
+  width: 95%;
+  margin-bottom: 15px;
+  padding: calc(var(--padding) - 4px);
+  font: 400 1em/2 var(--poppinsFont);
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 1.4px;
+}
+
+#register_component form button {
+  width: 95%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: inherit;
+  font: 700 1.3em/2 var(--ralewayFont);
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: hsl(280 100% 95%);
+  transition: all 0.4s;
+  margin-bottom: 15px;
+}
+#register_component form button:hover,
+#register_component form button:active {
+  background-color: hsl(280 80% 55%);
+  color: white;
+}
+
+#register_component form .or {
+  width: 90%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.or span {
+  width: 50%;
+  height: 0.5px;
+  background: #ffffff2a;
+}
+.or p {
+  color: #ffffff9a;
+  text-transform: uppercase;
+  margin: 0 5px;
+  font: 400 1em var(--ralewayFont);
+}
+
+.login_div {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  font: 1em system-ui;
+  grid-gap: var(--padding);
+}
+.login_div p {
+  color: white;
+}
+
+.login_div a {
+  text-decoration: none;
+  color: hsl(280 76% 57%);
+}
+.login_div a:hover,
+.login_div a:active {
+  text-decoration: underline;
+  color: hsl(280 100% 95%);
+}
+
+@media screen and (max-width: 768px) {
+  .Toastify__toast {
+    /* width: 260px; */
+    /* margin-left: auto; */
+  }
+}
